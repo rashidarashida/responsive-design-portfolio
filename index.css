@@ -140,5 +140,7 @@
     .main-banner-container{
         flex-direction: column-reverse;
     }
-    
+    .banner-image{
+        width: 300px;
+    }
 }
