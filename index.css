@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.max-width{
+    width: 1000px;
+    margin: auto;
+}
+.main-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+.logo i{
+    font-size: 40px;
+    color: red;
+}
+.logo h1{
+    color: red;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.logo span{
+    color: rgb(232,197,81);
+}
+.nav-items ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.nav-items ul li{
+    color: red;  
+    cursor: pointer;
+    font-size: 18px;
+}
+.nav-items ul li:hover{
+    color: black;
+    transition: 0.4s;
+}
+.nav-items ul li.login{
+    background-color: red;
+    color: white;
+    padding: 0.5rem 2rem;
+    border-radius: 0.3rem;
+}
+
+.main-banner-container{
+    display: flex;
+    align-items: center;
+}
+.banner-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+    flex: 50%;
+}
+.banner-content h1{
+    font-size: 35px;
+    color: black;
+}
+.banner-content span{
+    color: red;
+}
+.banner-content p{
+    font-size: 15px;
+    color: rgb(168, 129, 129);
+}
+.banner-content button{
+    background-color: red;
+    color: white;
+    width: 10rem;
+    padding: 0.4rem 3rem;
+    border: none;
+    border-radius: 0.4rem;
+}
+
+.banner-image{
+    flex: 30%;
+    position: relative;
+}
+.banner-image img{
+    width: 100%;
+}
+
+.banner-image-card{
+    width: 150px;
+    padding: 8px 8px;
+    margin: 2;
+    font-size: 15px;
+    background-color: rgb(94, 94, 94);
+    color: rgb(255, 255, 255);
+    border-radius: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+.banner-image-card i{
+    font-size: 15px;
+}
+
+.image-card1{
+    position: absolute;
+    top: 30px;
+}
+.image-card2{
+    position: absolute;
+    bottom: 10px;
+}
+.image-card3{
+    position: absolute;
+    top: 60%;
+    right: 5px;
+}
+@media only screen and {max-width: 768px;
+    .main-nav-container{
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 10px;
+        margin-top: 10px;
+    }
+    .nav-items ul li{
+        font-size: 10px;
+    }
+    .main-banner-container{
+        flex-direction: column-reverse;
+    }
+    
+}
