@@ -185,7 +185,7 @@
     color: gray;
     font-style: italic;
 }
-.card-attribute .prv-card{
+.card-attribute div .prv-card{
     text-decoration: line-through;
 }
 .card-attribute div i{
@@ -198,6 +198,7 @@
 .card-attribute span{
     color: black
 }
+
 .card-heading button{
     padding: 0.4rem 2rem;
     width: 100%;
@@ -208,11 +209,106 @@
     border-radius: 0.4rem;
     margin-top: 20px;
 }
-@media only screen and (max-width: 768px){
-    body{
-        padding: 0 15px;
 
-    }
+
+
+/* style form */
+
+.main-form-container{
+    margin-bottom: 8rem;
+}
+
+.main-form-content h1{
+    font-size: 35px;
+    color: red;
+}
+.main-form-content p{
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(82, 74, 74);
+    margin-top: 8px;
+    margin-bottom: 2.5rem;
+}
+
+.form-step div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.form-icon div input{
+    padding: 16px 38px;
+    font-size: 20px;
+    border: 1px solid red;
+    border-radius: 8px;
+    outline: none;
+    width: 70%;
+}
+.form-icon div{
+    position: relative;
+}
+.form-icon div i{
+    color: rgb(82, 74, 74);
+    position: absolute;
+    top: 35%;
+    left: 10px;
+    font-size: 20px;
+}
+.form-step div textarea{
+     padding: 40px 38px;
+    font-size: 20px;
+    border: 1px solid red;
+    color: rgb(82, 74, 74);
+    border-radius: 8px;
+    outline: none;
+    width: 70%;
+}
+.form-step button{
+    background-color: red;
+    color: white;
+    width: 10rem;
+    padding: 0.4rem 3rem;
+    border: none;
+    border-radius: 0.4rem; 
+}
+
+.main-footer-container{
+    background-color: black;
+    color: white;
+    padding: 13rem;
+    text-align: center;
+}
+
+.logo2{
+    display: flex;
+   flex-direction: column;
+    gap: 20px;
+}
+
+.logo2 i{
+    font-size: 40px;
+    color: red;
+}
+
+.logo2 h1{
+    margin-bottom: 1%;
+    color: red;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.logo2 p{
+    font-size: 20px;
+}
+
+.social-icon{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+    font-size: 2rem;
+}
+
+
+@media only screen and (max-width: 768px){
     .main-nav-container{
         flex-direction: column;
         gap: 20px;
@@ -239,6 +335,13 @@
     }
     .card-heading p {
         font-size: 10px;
+    }
+
+    .form-step{
+        width: 300px;
+    }
+    .main-footer-container{
+        width: 300px;
     }
 }
 
